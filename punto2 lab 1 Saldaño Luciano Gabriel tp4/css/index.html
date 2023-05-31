@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Punto 2</title>
+</head>
+
+
+<body>
+    <main>
+        <form action="encuesta.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="50" required>
+
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="fecha_nac">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac" value="01/01/2000" required>
+
+            <label for="cel">Celular:</label>
+            <input type="tel" id="cel" name="cel" pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera">
+                <option value="programador">Programador Universitario</option>
+                <option value="licenciatura">Licenciatura en Informática</option>
+                <option value="ingenieria">Ingeniería en Informática</option>
+                <option value="agrimensura">Agrimensura</option>
+            </select>
+
+            <label for="recursa">¿Recursa la carrera?</label>
+            <label for="recursa">Si</label>
+
+            <input type="checkbox" id="recursa" name="recursa">
+            <label for="recursa">No</label>
+
+            <input type="checkbox" id="recursa" name="no recursa" checked>
+
+            <label for="materia">Materias que cursa:</label>
+
+            <input type="checkbox" id="materia" name="materia" value="lab1" checked>
+            <label for="materia">Laboratorio I</label>
+
+
+            <input type="checkbox" id="materia" name="materia" value="lab1">
+            <label for="materia">Logica</label>
+
+            <input type="checkbox" id="materia" name="materia" value="lab1">
+            <label for="materia">Calculo I</label>
+
+            <input type="checkbox" id="materia" name="materia" value="lab1">
+            <label for="materia">Algebra I</label>
+            <input type="checkbox" id="materia" name="materia" value="lab1">
+            <label for="materia">Otras.</label>
+
+
+
+
+
+            <label for="dia_clase">Día de clase práctica:</label>
+            <select id="dia_clase" name="dia_clase">
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="viernes">Viernes</option>
+            </select>
+
+            <label for="satisfaccion">Grado de satisfacción:</label>
+            <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="100" step="5">
+
+            <label for="calificacion">Calificación de la materia:</label>
+            <input type="number" id="calificacion" name="calificacion" min="1" max="10" value="5">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Punto 2</title>
+</head>
+
+
+<body>
+    <main>
+        <form action="encuesta.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="50" required>
+
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera">
+                <option value="Programador Universitario">Programador Universitario</option>
+                <option value="Licenciatura en Informática">Licenciatura en Informática</option>
+                <option value="Ingeniería en Informática">Ingeniería en Informática</option>
+                <option value="Agrimensura">Agrimensura</option>
+            </select>
+
+            <label for="recursa">Recursa la carrera:</label>
+            <input type="radio" id="recursa_no" name="recursa" value="no" checked>
+            <label for="recursa_no">No</label>
+            <input type="radio" id="recursa_si" name="recursa" value="si">
+            <label for="recursa_si">Si</label>
+
+            <label for="materia">Materia:</label>
+            <input type="checkbox" id="materia_laboratorio" name="materia" value="Laboratorio I" checked>
+            <label for="materia_laboratorio">Laboratorio I</label>
+
+            <label for="dia_clase">Día de clase práctica:</label>
+            <select id="dia_clase" name="dia_clase">
+                <option value="Martes">Martes</option>
+                <option value="Miércoles">Miércoles</option>
+                <option value="Viernes">Viernes</option>
+            </select>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" maxlength="10">
+
+            <label for="calificacion">Calificación de la materia:</label>
+            <input type="number" id="calificacion" name="calificacion" min="1" max="10" value="5" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" value="2000-01-01">
+
+            <label for="satisfaccion">Grado de satisfacción:</label>
+            <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="100" step="5">
+
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+</body>
+
+</html>

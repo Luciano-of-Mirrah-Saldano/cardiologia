@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <nav id="saltar" class="contenedores-sup">
+
+        <ul>
+            <li>
+                <a href="#centro">Saltar al contenido</a>
+                <a href="#barra-navegacion">Saltar a la navegacion</a>
+
+
+            </li>
+        </ul>
+
+    </nav>
+    <header id="encabezado" class="contenedores-sup">
+        <section id="cont-fig-h">
+            <figure id="primer-fig"><img id="primer-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIMb7a_9j3F7twDv8C9Ebioz7XUBMg6mm2g&usqp=CAU"
+                    alt="Logo de serie">
+                <figcaption></figcaption>
+            </figure>
+            <h1>Hunter x Hunter</h1>
+        </section>
+        <nav id="barra-navegacion" class="contenedores-sup">
+
+            <ul>
+                <li>
+                    <a href="../index.html" class="sitios-ext">Inicio</a>
+                    <a href="reparto.html" class="sitios-ext">Reparto</a>
+                    <a href="datos.html" class="sitios-ext">Datos</a>
+                    <a href="registro.html" class="sitios-ext">Registro</a>
+
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="flex-section">
+        <main id="main-form">
+            <form action="suscripcion.php" method="post">
+                <h2>Registro!</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Seleccione un país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="México">México</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Otros">Otros</option>
+                </select>
+
+                <label>¿Quiere recibir novedades o promociones de la plataforma?</label>
+                <label for="si">Sí</label>
+                <input type="radio" id="si" name="novedades" value="si">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="novedades" value="no" checked>
+
+                <button type="submit">Suscribir</button>
+            </form>
+
+
+        </main>
+        <aside id="asides-section">
+            <form id="aside-form" action="contacto.php" method="post">
+                <h2>“¿Algún inconveniente?
+                    Contáctanos</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" required></textarea>
+
+                <button type="submit">Enviar</button>
+        </aside>
+    </section>
+    <footer id="pie">
+        <p>© copyright Saldaño Luciano Gabriel</p>
+        <a href="mailto:luk896@gmail.com">Mi Mail personal.</a>
+    </footer>
+
+</body>
+
+</html>

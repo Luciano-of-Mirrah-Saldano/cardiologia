@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#menudespl {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}

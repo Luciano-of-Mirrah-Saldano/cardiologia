@@ -1,0 +1,135 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: red;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+nav a {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: black;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: black;
+}
+
+figure {
+    margin-right: 50px;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 30vw;
+    background-color: blanchedalmond;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 1em;
+    margin-bottom: 20px;
+
+}
+
+figure img {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    color: grey;
+    font-size: 12px;
+}
+
+footer {
+    display: block;
+    background-color: rgb(240, 0, 0);
+    height: 11vh;
+    align-items: center;
+    justify-content: right;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+    margin-right: 5vw;
+
+}
+
+article ul li {
+    margin: 6vw;
+    font-weight: bold;
+}
+
+h2,
+h3,
+p {
+    margin: 5vh;
+}
+
+section main article figure img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    width: 20vw;
+
+
+}
+
+
+
+section main figure {
+    width: 23%;
+    margin-bottom: 10%;
+}
+
+section main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+section main figure img {
+    width: 100%;
+}
